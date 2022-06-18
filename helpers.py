@@ -20,7 +20,7 @@ import pyLDAvis.sklearn
 ######################################################
 
 def load_data():
-    df = pd.read_csv("hardrock_dataset")
+    df = pd.read_csv("hardrock_dataset",index_col=[0])
     return df
 
 ######################################################
