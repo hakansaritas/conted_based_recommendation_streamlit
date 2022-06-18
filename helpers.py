@@ -212,6 +212,8 @@ def pairwise_dist(lda_matrix):
 
     dists = pairwise_distances(lda_matrix, metric='cosine')
     
+    return dist
+    
 ##################################################################
 
 def recom_from_text(df, nlp, my_title, my_text, extra_word_list):
