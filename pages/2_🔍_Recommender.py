@@ -101,7 +101,7 @@ with st.container():
 
     if st.button('get recommendation',key=3):
         data_load_state = st.text('please wait ⏱️...it takes approximately 1-2 minutes')
-        df_html, df_recom = helpers.lda_recommendation(nlp, df, songid_list, extra_word_list)
+        df_html, df_recom = helpers.lda_recommendation(df,nlp, songid_list, extra_word_list)
         data_load_state.text("let's ROCK!")
         song_html2 = helpers.play_list(df_html)
 
