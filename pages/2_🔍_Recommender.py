@@ -17,7 +17,7 @@ st.write("3 - Select three song titles from database and take nearest songs acco
 
 with st.sidebar:
     data_load_state = st.text('Loading data...')
-    df = helpers.load_data("hardrock_dataset.xlsx", "xlsx")
+    df = helpers.load_data()
     data_load_state.text('Loading data...done!')
 
     data_load_state = st.text('Loading spacy model...')
