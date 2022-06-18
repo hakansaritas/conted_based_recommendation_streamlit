@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import helpers
-pip install openpyxl
+
 
 st.title("📣 RECOMMENDATION ENGINE ")
 st.write( "There are three kind of recommendation selection engines.")
