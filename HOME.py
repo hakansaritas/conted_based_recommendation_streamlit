@@ -66,8 +66,7 @@ with st.container():
         code = (meta.code8)
         st.code(code, language='python')
 
-    with st.expander("7 - Vectorizing of the words using TF-IDF for the computer to understand and \n"
-                     "Find the content based similarities between two lyrics using Cosine Similarity", expanded=False):
+    with st.expander("7 - Vectorizing of the words using TF-IDF for the computer to understand ", expanded=False):
         code = (meta.code9)
         st.code(code, language='python')
 
