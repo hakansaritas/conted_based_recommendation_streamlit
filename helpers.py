@@ -20,7 +20,7 @@ import pyLDAvis.sklearn
 ######################################################
 
 def load_data():
-    df = pd.read_excel("hardrock_dataset.xlsx", engine ="openxlrd")
+    df = pd.read_excel("hardrock_dataset.xlsx", engine='openpyxl')
     return df
 
 ######################################################
