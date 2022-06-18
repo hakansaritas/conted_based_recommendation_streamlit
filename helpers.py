@@ -23,7 +23,7 @@ def load_data(dataset_name, data_type):
     if data_type == "csv":
         df = pd.read_csv(dataset_name)
     elif data_type == "xlsx":
-        df = pd.read_excel(dataset_name, engine ="xlrd")
+        df = pd.read_excel(dataset_name, engine ="openxlrd")
     else:
         print("only csv or excel file")
 
