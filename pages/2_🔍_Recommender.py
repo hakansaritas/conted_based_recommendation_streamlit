@@ -5,15 +5,10 @@ import helpers
 
 st.title("📣 RECOMMENDATION ENGINE ")
 st.write( "There are three kind of recommendation selection engines.")
-st.write("1 - Select one song title from database and take nearest songs according to content of it. Pipeline (Clean "
-         "text - Tokenize - Stop Words - Lemminization - TF/IDF - Cosine Similarity - Recommendation up to chosen "
-         "Song title)")
-st.write("2 - Type what ever you want with its title and take nearest songs according to content of it. Pipeline ("
-         "Clean text - Tokenize - Stop Words - Lemminization - TF/IDF - Cosine Similarity - Recommendation up to typed"
-         " argument)")
-st.write("3 - Select three song titles from database and take nearest songs according to content of them. LDA model can be arranged Pipeline ("
-         "Clean text - Tokenize - Stop Words - Lemminization - Counter Vectorization - Reduce words the Topic by LDA"
-         "  - Recommendation up to chosen Song titles)")
+st.write("1 - Select one song title from database and take nearest songs according to content of it")
+st.write("2 - Type what ever you want with its title and take nearest songs according to content of it")
+st.write("3 - Select three song titles from database and take nearest songs according to content of them. "
+         "LDA model can be arranged Pipeline" )
 
 with st.sidebar:
     data_load_state = st.text('Loading data...')
