@@ -208,16 +208,10 @@ def lda(df,ct,count_matrix, html=False):
 
 ##################################################################
 
-def pairwise_dist(lda_matrix, euclidean=False):
+def pairwise_dist(lda_matrix):
 
     dists = pairwise_distances(lda_matrix, metric='cosine')
-
-    if euclidean:
-
-        dists = pairwise_distances(lda_matrix, metric='euclidean')
-
-    return dists
-
+    
 ##################################################################
 
 def recom_from_text(df, nlp, my_title, my_text, extra_word_list):
