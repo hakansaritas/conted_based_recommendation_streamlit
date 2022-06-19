@@ -212,7 +212,7 @@ def pairwise_dist(lda_matrix):
 
     dists = pairwise_distances(lda_matrix, metric='cosine')
     
-    return dist
+    return dists
     
 ##################################################################
 
