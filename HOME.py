@@ -14,9 +14,8 @@ st.sidebar.info(
     This project is created by Hakan SARITAS in scope of "Veri Bilim Okulu - Data Sicence
      and Machine Learning Bootcamp". I am junior Data Scientist, so helpful 
      hints and suggestions are welcome. You can learn more about me at 
-    [E-mail]: saritas_hakan@yahoo.com
     [LinkedIn](https://www.linkedin.com/in/hakansaritas/) | [GitHub](https://github.com/hakansaritas) |
-     [Medium](https://hakansaritas.medium.com/) | 
+     [Medium](https://hakansaritas.medium.com/) | [E-mail]: saritas_hakan@yahoo.com
     """
 )
 
