@@ -8,6 +8,8 @@ st.write( "There are three kind of recommendation selection engines.")
 st.write("1 - Select one song title from database and take nearest songs.")
 st.write("2 - Type what ever you want with its title and take nearest songs.")
 st.write("3 - Select three song titles from database and take nearest songs.")
+st.write("### Warning! - If you can't listen the recommended songs , you may need an apple music subscription ")
+
 
 with st.sidebar:
     data_load_state = st.text('Loading data...')
@@ -42,14 +44,14 @@ with st.container():
         song_title = chooser[1]
 
     if st.button('get recommendation',key=1):
-        data_load_state = st.text('please wait ⏱️...it takes approximately 2-3 minutes')
+        data_load_state = st.text('please wait ⏱️...it takes approximately 30 seconds')
         df_html, df_recom = helpers.recom_from_title(df,nlp,song_title, extra_word_list)
         data_load_state.text("let's ROCK!")
         song_html = helpers.play_list(df_html)
 
         st.subheader("tracks (only 30 sec)")
         for song_url in song_html:
-            components.iframe(song_url, height=200, scrolling=True)
+            components.iframe(song_url, height=50, scrolling=True)
 
         st.subheader("Info")
         st.write(df_recom)
@@ -66,7 +68,7 @@ with st.container():
         st.write(my_text)
 
     if st.button('get recommendation',key=2):
-        data_load_state = st.text('please wait ⏱️...it takes approximately 2 minutes')
+        data_load_state = st.text('please wait ⏱️...it takes approximately 30 seconds')
         df_html, df_recom = helpers.recom_from_text(df, nlp, my_title, my_text, extra_word_list)
         data_load_state.text("let's ROCK!")
         song_html1 = helpers.play_list(df_html)
@@ -94,7 +96,7 @@ with st.container():
         st.text(songid_list)
 
     if st.button('get recommendation',key=3):
-        data_load_state = st.text('please wait ⏱️...it takes approximately 1-2 minutes')
+        data_load_state = st.text('please wait ⏱️...it takes approximately 30 seconds')
         df_html, df_recom = helpers.lda_recommendation(df,nlp, songid_list, extra_word_list)
         data_load_state.text("let's ROCK!")
         song_html2 = helpers.play_list(df_html)
