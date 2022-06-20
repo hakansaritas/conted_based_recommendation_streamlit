@@ -1,11 +1,6 @@
-code1 = r"""def load_data(dataset_name, data_type):
-        if data_type == "csv":
-            df = pd.read_csv(dataset_name)
-        elif data_type == "xlsx":
-            df = pd.read_excel(dataset_name)
-        else:
-            print("only csv or excel file")
-        return df"""
+code1 = r"""def load_data():
+    df = pd.read_csv("hardrock_dataset",index_col=[0])
+    return df"""
 
 code2 = r"""
 def download_spacy_model(model="en_core_web_sm"):
