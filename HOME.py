@@ -23,13 +23,14 @@ st.sidebar.info(
 st.title ("🎧 CONTENT BASED SONG RECOMMENDATION ")
 st.text("\n")
 st.text("\n")
-col1, col2 , col3= st.columns([1, 7 , 1])
+col1, mid, col2= st.columns([1, 1, 20])
+with col1:
+    st.image(load_image("./pic/jukebox.jpg"),width=150)
 with col2:
     st.subheader("Story 🎬")
     st.write(meta.meta1)
 
-with col1:
-    st.image(load_image("./pic/jukebox.jpg"),width=150)
+
 
 
 st.write(meta.meta2)
