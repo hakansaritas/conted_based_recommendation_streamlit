@@ -23,7 +23,7 @@ st.sidebar.info(
 st.title ("🎧 CONTENT BASED SONG RECOMMENDATION ")
 st.text("\n")
 st.text("\n")
-col1, mid, col2= st.columns([1, 1, 20])
+col1, mid, col2= st.beta_columns([1, 1, 20])
 with col1:
     st.image(load_image("./pic/jukebox.jpg"),width=150)
 with col2:
