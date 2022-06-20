@@ -49,7 +49,7 @@ with st.container():
 
         st.subheader("tracks (only 30 sec)")
         for song_url in song_html:
-            components.iframe(song_url, height=50, width =10, scrolling=True)
+            components.iframe(song_url, height=50, width =100, scrolling=True)
 
         st.subheader("Info")
         st.write(df_recom)
