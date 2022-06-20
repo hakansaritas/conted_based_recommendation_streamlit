@@ -24,7 +24,7 @@ st.title ("🎧 CONTENT BASED SONG RECOMMENDATION ")
 st.text("\n")
 st.text("\n")
 
-col1, mid, col2= st.columns([1, 5, 20])
+col1, mid, col2= st.columns([1, 3, 20])
 with col1:
     st.image(load_image("./pic/jukebox.jpg"),width=150)
 with col2:
