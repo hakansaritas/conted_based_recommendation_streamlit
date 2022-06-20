@@ -1,4 +1,3 @@
-
 import streamlit.components.v1 as components
 import streamlit as st
 
@@ -9,8 +8,7 @@ st.write("If you enter a high alpha, then you’ll distribute each document "
          " while if you have specialized documents, then a low alpha will keep them"
          " divided into few topics (Falk 2019)")
 
-           
-          HtmlFile = open("./pages/lda.html", 'r', encoding='utf-8')
-          source_code = HtmlFile.read()
-          print(source_code)
-          components.html(source_code,height = 800, width = 1300)
+HtmlFile = open("./pages/lda.html", 'r', encoding='utf-8')
+source_code = HtmlFile.read()
+print(source_code)
+components.html(source_code,height = 800, width=1300)
