@@ -18,7 +18,7 @@ import pyLDAvis.sklearn
 
 
 ######################################################
-
+@st.cache(allow_output_mutation=True)
 def load_data():
     df = pd.read_csv("hardrock_dataset",index_col=[0])
     return df
