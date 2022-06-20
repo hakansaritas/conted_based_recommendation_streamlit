@@ -8,7 +8,7 @@ st.write( "There are three kind of recommendation selection engines.")
 st.write("1 - Select one song title from database and take nearest songs.")
 st.write("2 - Type what ever you want with its title and take nearest songs.")
 st.write("3 - Select three song titles from database and take nearest songs.")
-st.write("##### Warning! - If you can't listen the recommended songs , you may need an apple music subscription ")
+st.write("###### Warning! - warning! if you can't listen the songs on the phone , you may need an apple music subscription ")
 
 
 with st.sidebar:
