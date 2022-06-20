@@ -12,4 +12,4 @@ st.write("If you enter a high alpha, then you’ll distribute each document "
 HtmlFile = open("./pages/lda.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read()
 print(source_code)
-components.html(source_code,height = 800, width = 800)
+components.html(source_code,height = 800, width = 1200)
