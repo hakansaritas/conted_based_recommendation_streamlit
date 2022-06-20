@@ -8,7 +8,7 @@ st.write("If you enter a high alpha, then you’ll distribute each document "
          "The advantage with high alpha is that documents seem to be more similar,"
          " while if you have specialized documents, then a low alpha will keep them"
          " divided into few topics (Falk 2019)")
-col1,col2 = st.columns([1,2]):
+col1,col2 = st.columns([1,2])
 with col1():               
          HtmlFile = open("./pages/lda.html", 'r', encoding='utf-8')
          source_code = HtmlFile.read()
